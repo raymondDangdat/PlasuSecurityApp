@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfficerSendReport">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header_register"
+        android:theme="@style/ToolbarTheme"
+        android:elevation="5dp" />
+
+    <TextView
+        android:id="@+id/tvOfficerSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:elevation="10dp"
+        android:transitionName="tvLogin"
+        android:text="Send Report"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_below="@+id/tvOfficerSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:id="@+id/edt_report_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Report Title"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_rounded"
+            android:inputType="textCapWords"
+            />
+
+        <EditText
+            android:id="@+id/edt_report_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type The Content of Report Here!"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_rounded"
+            android:inputType="textMultiLine"
+            />
+
+        <Button
+            android:id="@+id/btn_send_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="15dp"
+            android:fontFamily="cursive"
+            android:background="@drawable/bg_ui"
+            android:text="Send Report"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_officer"
+            android:icon="@drawable/ic_group_add"
+            android:title="Add Officer" />
+        <item
+            android:id="@+id/nav_view_report"
+            android:icon="@drawable/ic_report"
+            android:title="View Report" />
+        <item
+            android:id="@+id/nav_duty_rooster"
+            android:icon="@drawable/ic_schedule"
+            android:title="Duty Rooster" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_power_settings"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

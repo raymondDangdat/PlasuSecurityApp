@@ -21,7 +21,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
         android:elevation="5dp"
-        android:text="Welcome to apps"
+        android:text="Welcome to PLASU Security App"
         android:textColor="@color/colorWhite"
         android:textSize="17sp" />
 
@@ -105,17 +105,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Username"
+                        android:text="Email"
                         android:textColor="@color/colorPurple"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/editTextEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:inputType="text" />
+                        android:inputType="textEmailAddress" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -127,6 +128,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/editTextPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -147,6 +149,7 @@
                 android:elevation="10dp">
 
                 <Button
+                    android:id="@+id/btn_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_ui"
@@ -183,21 +186,21 @@
                 android:text="Forgot your password?"
                 android:textSize="14sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tvForgot"
-                android:layout_alignLeft="@+id/cv"
-                android:layout_alignRight="@+id/cv"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/bt_uifb"
-                android:drawableLeft="@drawable/logofacebook"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:text="LOGIN WITH FACEBOOK"
-                android:textColor="@color/colorPurple" />
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/tvForgot"-->
+                <!--android:layout_alignLeft="@+id/cv"-->
+                <!--android:layout_alignRight="@+id/cv"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:background="@drawable/bt_uifb"-->
+                <!--android:drawableLeft="@drawable/logofacebook"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="LOGIN WITH FACEBOOK"-->
+                <!--android:textColor="@color/colorPurple" />-->
         </RelativeLayout>
     </ScrollView>
 

@@ -19,8 +19,39 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.FullScreen"></activity>
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ChiefSecurity"
+            android:label="@string/title_activity_chief_security"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DutyRooster"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".OfficerSendReport"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".OfficerHome"
+            android:label="@string/title_activity_officer_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OfficerSettingsActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ChiefViewReportsActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".OfficerReportsActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".OfficerReportDetails"
+            android:theme="@style/AppTheme.FullScreen"/>
     </application>
 
 </manifest>
