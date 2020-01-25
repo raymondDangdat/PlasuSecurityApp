@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mind.loginregisterapps">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -50,7 +51,15 @@
         <activity
             android:name=".ChangePasswordActivity"
             android:theme="@style/AppTheme.FullScreen" />
-        <activity android:name=".OfficerReportDetails"
+        <activity
+            android:name=".OfficerReportDetails"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".NoticeDetails"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".ManageOfficersActivity"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ChiefReportDetailsActivity"
             android:theme="@style/AppTheme.FullScreen"/>
     </application>
 

@@ -5,26 +5,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".OfficerHome"
-    tools:showIn="@layout/app_bar_officer_home">
+    tools:context=".ManageOfficersActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header_register"
+        android:theme="@style/ToolbarTheme"
+        android:elevation="5dp" />
     <TextView
-        android:id="@+id/tvNotifications"
+        android:id="@+id/tvManageOfficers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:elevation="10dp"
         android:transitionName="tvLogin"
-        android:text="Notifications"
-        android:textSize="25sp"
+        android:text="PLASU SECURITY OFFICERS "
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
         android:textStyle="bold" />
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_notice"
+        android:id="@+id/recycler_officers"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvNotifications"
-        android:layout_margin="10dp">
+        android:layout_below="@+id/tvManageOfficers"
+        android:layout_marginTop="50dp">
     </android.support.v7.widget.RecyclerView>
+
 </RelativeLayout>

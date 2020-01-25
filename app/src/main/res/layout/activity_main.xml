@@ -115,6 +115,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:text="chiefsecurityplasu@gmail.com"
                         android:layout_marginRight="10dp"
                         android:inputType="textEmailAddress" />
 
@@ -132,6 +133,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:text="smart001"
                         android:layout_marginRight="10dp"
                         android:inputType="textPassword" />
                 </LinearLayout>

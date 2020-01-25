@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,5 +8,24 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ChiefSecurity"
     tools:showIn="@layout/app_bar_chief_security">
+    <TextView
+        android:id="@+id/tvNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:elevation="10dp"
+        android:transitionName="tvLogin"
+        android:text="Notifications"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_notice"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNotifications"
+        android:layout_margin="10dp">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

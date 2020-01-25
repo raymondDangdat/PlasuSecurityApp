@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header_register"
+        android:theme="@style/ToolbarTheme"
+        android:elevation="5dp" />
+    <TextView
+        android:id="@+id/tvNoticeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        android:transitionName="tvLogin"
+        android:text="Notice Details"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvNoticeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:elevation="10dp"
+        android:transitionName="tvLogin"
+        android:text="This is the title of the notice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvNoticeDetails"/>
+
+    <TextView
+        android:id="@+id/tvNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:transitionName="tvLogin"
+        android:text="This is the content of the notice. Hope this would allow multilines"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvNoticeTitle"/>
+    <TextView
+        android:id="@+id/tvNoticeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:transitionName="tvLogin"
+        android:text="This is the date of the notice"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvNotice"/>
+</RelativeLayout>

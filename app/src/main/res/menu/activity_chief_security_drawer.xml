@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_group_add"
             android:title="Add Officer" />
         <item
+            android:id="@+id/nav_officers"
+            android:icon="@drawable/ic_group"
+            android:title="Manage Officers" />
+        <item
             android:id="@+id/nav_view_report"
             android:icon="@drawable/ic_report"
             android:title="View Report" />
