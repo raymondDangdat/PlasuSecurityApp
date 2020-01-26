@@ -82,7 +82,10 @@ public class ManageOfficersActivity extends AppCompatActivity {
                 holder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-
+                        //get complaint id to new activity
+                        Intent assignDuty = new Intent(ManageOfficersActivity.this, AssignDutyActivity.class);
+                        assignDuty.putExtra("OfficerId", adapter.getRef(position).getKey());
+                        startActivity(assignDuty);
                     }
                 });
             }

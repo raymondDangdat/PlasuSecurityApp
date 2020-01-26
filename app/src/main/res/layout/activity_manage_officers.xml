@@ -18,21 +18,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:elevation="10dp"
         android:transitionName="tvLogin"
         android:text="PLASU SECURITY OFFICERS "
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/tvManageOfficers"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Click to assign duty,long press for more options"/>
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_officers"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvManageOfficers"
-        android:layout_marginTop="50dp">
+        android:layout_below="@+id/tvInfo"
+        android:layout_marginTop="10dp">
     </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
