@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textStyle="bold"
-                    android:text="Duty Post"/>
+                    android:text="Duty Status"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -78,14 +78,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Duty Status"
+                    android:text="Duty Post"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save"
                     android:textStyle="bold"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -94,10 +100,10 @@
                     android:text="Monday"
                     android:textStyle="bold"/>
                 <Spinner
-                    android:id="@+id/msdp"
+                    android:id="@+id/msds"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_post"
+                    android:entries="@array/duty_status"
                     android:padding="10dp"
                     android:layout_weight="1">
                 </Spinner>
@@ -110,21 +116,31 @@
                     android:padding="10dp">
                 </Spinner>
                 <Spinner
-                    android:id="@+id/msds"
+                    android:id="@+id/msdp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_status"
+                    android:entries="@array/duty_post"
                     android:layout_weight="1"
                     android:scrollbars="none"
                     android:padding="10dp"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
+                <Button
+                    android:id="@+id/buttonSaveMonday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -133,10 +149,10 @@
                     android:text="Tuesday"
                     android:textStyle="bold"/>
                 <Spinner
-                    android:id="@+id/tsdp"
+                    android:id="@+id/tsds"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_post"
+                    android:entries="@array/duty_status"
                     android:padding="10dp"
                     android:layout_weight="1">
                 </Spinner>
@@ -149,21 +165,31 @@
                     android:padding="10dp">
                 </Spinner>
                 <Spinner
-                    android:id="@+id/tsds"
+                    android:id="@+id/tsdp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_status"
+                    android:entries="@array/duty_post"
                     android:layout_weight="1"
                     android:scrollbars="none"
                     android:padding="10dp"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
+                <Button
+                    android:id="@+id/buttonSaveTuesday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -172,10 +198,10 @@
                     android:text="Wednesday"
                     android:textStyle="bold"/>
                 <Spinner
-                    android:id="@+id/wsdp"
+                    android:id="@+id/wsds"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_post"
+                    android:entries="@array/duty_status"
                     android:padding="10dp"
                     android:layout_weight="1">
                 </Spinner>
@@ -188,21 +214,31 @@
                     android:padding="10dp">
                 </Spinner>
                 <Spinner
-                    android:id="@+id/wsds"
+                    android:id="@+id/wsdp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_status"
+                    android:entries="@array/duty_post"
                     android:layout_weight="1"
                     android:scrollbars="none"
                     android:padding="10dp"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
+                <Button
+                    android:id="@+id/buttonSaveWednesday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -211,10 +247,10 @@
                     android:text="Thursday"
                     android:textStyle="bold"/>
                 <Spinner
-                    android:id="@+id/thsdp"
+                    android:id="@+id/thsds"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_post"
+                    android:entries="@array/duty_status"
                     android:padding="10dp"
                     android:layout_weight="1">
                 </Spinner>
@@ -227,21 +263,31 @@
                     android:padding="10dp">
                 </Spinner>
                 <Spinner
-                    android:id="@+id/thsds"
+                    android:id="@+id/thsdp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_status"
+                    android:entries="@array/duty_post"
                     android:layout_weight="1"
                     android:scrollbars="none"
                     android:padding="10dp"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
+                <Button
+                    android:id="@+id/buttonSaveThursday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -250,10 +296,10 @@
                     android:text="Friday"
                     android:textStyle="bold"/>
                 <Spinner
-                    android:id="@+id/fsdp"
+                    android:id="@+id/fsds"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_post"
+                    android:entries="@array/duty_status"
                     android:padding="10dp"
                     android:layout_weight="1">
                 </Spinner>
@@ -266,21 +312,31 @@
                     android:padding="10dp">
                 </Spinner>
                 <Spinner
-                    android:id="@+id/fsds"
+                    android:id="@+id/fsdp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_status"
+                    android:entries="@array/duty_post"
                     android:layout_weight="1"
                     android:scrollbars="none"
                     android:padding="10dp"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
+                <Button
+                    android:id="@+id/buttonSaveFriday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -289,10 +345,10 @@
                     android:text="Saturday"
                     android:textStyle="bold"/>
                 <Spinner
-                    android:id="@+id/ssdp"
+                    android:id="@+id/ssds"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_post"
+                    android:entries="@array/duty_status"
                     android:padding="10dp"
                     android:layout_weight="1">
                 </Spinner>
@@ -305,21 +361,31 @@
                     android:padding="10dp">
                 </Spinner>
                 <Spinner
-                    android:id="@+id/ssds"
+                    android:id="@+id/ssdp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_status"
+                    android:entries="@array/duty_post"
                     android:layout_weight="1"
                     android:scrollbars="none"
                     android:padding="10dp"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
+                <Button
+                    android:id="@+id/buttonSaveSaturday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="4"
+                android:weightSum="5"
                 android:layout_margin="6dp">
                 <TextView
                     android:layout_width="0dp"
@@ -328,10 +394,10 @@
                     android:text="Sunday"
                     android:textStyle="bold"/>
                 <Spinner
-                    android:id="@+id/susdp"
+                    android:id="@+id/susds"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_post"
+                    android:entries="@array/duty_status"
                     android:padding="10dp"
                     android:layout_weight="1">
                 </Spinner>
@@ -344,27 +410,26 @@
                     android:padding="10dp">
                 </Spinner>
                 <Spinner
-                    android:id="@+id/susds"
+                    android:id="@+id/susdp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:entries="@array/duty_status"
+                    android:entries="@array/duty_post"
                     android:layout_weight="1"
                     android:scrollbars="none"
                     android:padding="10dp"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
+                <Button
+                    android:id="@+id/buttonSaveSunday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"/>
             </LinearLayout>
-            <Button
-                android:id="@+id/buttonSaveDuty"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorPurple"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="25sp"
-                android:text="Save Duty"
-                android:layout_margin="10dp"
-                android:fontFamily="cursive"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

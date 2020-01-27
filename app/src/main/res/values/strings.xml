@@ -10,7 +10,6 @@
     <string name="title_activity_officer_home">PLASU Sec. Officer</string>
 
     <string-array name="duty_post">
-        <item>Off Duty</item>
         <item>Gate</item>
         <item>Admin</item>
         <item>Library</item>
@@ -19,13 +18,11 @@
     </string-array>
 
     <string-array name="duty_time">
-        <item>Off Duty</item>
         <item>Day</item>
         <item>Night</item>
     </string-array>
 
     <string-array name="duty_status">
-        <item>Off Duty</item>
         <item>On Duty</item>
         <item>Off Duty</item>
     </string-array>

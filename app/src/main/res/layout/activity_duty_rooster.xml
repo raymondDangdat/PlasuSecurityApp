@@ -17,7 +17,7 @@
         android:elevation="5dp" />
 
     <TextView
-        android:id="@+id/tvSignUp"
+        android:id="@+id/tvDutyRooster"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -28,5 +28,13 @@
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_duty_rooster"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDutyRooster"
+        android:layout_marginTop="50dp">
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
