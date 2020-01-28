@@ -14,6 +14,10 @@
             android:icon="@drawable/ic_history"
             android:title="Your Reports" />
         <item
+            android:id="@+id/nav_duty_rooster"
+            android:icon="@drawable/ic_schedule"
+            android:title="Duty Rooster" />
+        <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_menu_manage"
             android:title="Settings" />

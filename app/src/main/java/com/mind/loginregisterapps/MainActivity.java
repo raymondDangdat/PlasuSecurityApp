@@ -25,7 +25,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity{
 
     private ImageButton btRegister;
     private TextView tvLogin, tvForgotPassword;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         btRegister  = findViewById(R.id.btRegister);
         tvLogin     = findViewById(R.id.tvLogin);
-        btRegister.setOnClickListener(this);
+        //btRegister.setOnClickListener(this);
         btnLogin = findViewById(R.id.btn_login);
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextPassword = findViewById(R.id.editTextPassword);
@@ -113,15 +113,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @Override
-    public void onClick(View v) {
-        if (v==btRegister){
-            Intent intent   = new Intent(MainActivity.this,RegisterActivity.class);
-            Pair[] pairs    = new Pair[1];
-            pairs[0] = new Pair<View,String>(tvLogin,"tvLogin");
-            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-            startActivity(intent,activityOptions.toBundle());
-        }
-    }
+//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+//    @Override
+//    public void onClick(View v) {
+//        if (v==btRegister){
+//            Intent intent   = new Intent(MainActivity.this,RegisterActivity.class);
+//            Pair[] pairs    = new Pair[1];
+//            pairs[0] = new Pair<View,String>(tvLogin,"tvLogin");
+//            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
+//            startActivity(intent,activityOptions.toBundle());
+//        }
+//    }
 }

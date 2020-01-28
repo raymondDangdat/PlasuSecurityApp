@@ -132,7 +132,7 @@ public class AssignDutyActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     String dutyTime = spinnerMonDutyTime.getSelectedItem().toString();
                                     String dutyPost = spinnerMonDutyPost.getSelectedItem().toString();
-                                    final String dutyPostAndTime = dutyPost + " " + dutyTime;
+                                    final String dutyPostAndTime = dutyPost + ", " + dutyTime;
 
                                     duty.child(officerId).child("Monday").setValue(dutyPostAndTime).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
@@ -202,7 +202,7 @@ public class AssignDutyActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     String dutyTime = spinnerTuesDutyTime.getSelectedItem().toString();
                                     String dutyPost = spinnerTuesDutyPost.getSelectedItem().toString();
-                                    final String dutyPostAndTime = dutyPost + " " + dutyTime;
+                                    final String dutyPostAndTime = dutyPost + ", " + dutyTime;
 
                                     duty.child(officerId).child("Tuesday").setValue(dutyPostAndTime).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
@@ -272,7 +272,7 @@ public class AssignDutyActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     String dutyTime = spinnerWedDutyTime.getSelectedItem().toString();
                                     String dutyPost = spinnerWedDutyPost.getSelectedItem().toString();
-                                    final String dutyPostAndTime = dutyPost + " " + dutyTime;
+                                    final String dutyPostAndTime = dutyPost + ", " + dutyTime;
 
                                     duty.child(officerId).child("Wednesday").setValue(dutyPostAndTime).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
@@ -342,7 +342,7 @@ public class AssignDutyActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     String dutyTime = spinnerThurDutyTime.getSelectedItem().toString();
                                     String dutyPost = spinnerThurDutyPost.getSelectedItem().toString();
-                                    final String dutyPostAndTime = dutyPost + " " + dutyTime;
+                                    final String dutyPostAndTime = dutyPost + ", " + dutyTime;
                                     duty.child(officerId).child("Thursday").setValue(dutyPostAndTime).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
@@ -470,7 +470,7 @@ public class AssignDutyActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     String dutyTime = spinnerFriDutyTime.getSelectedItem().toString();
                                     String dutyPost = spinnerFriDutyPost.getSelectedItem().toString();
-                                    final String dutyPostAndTime = dutyPost + " " + dutyTime;
+                                    final String dutyPostAndTime = dutyPost + ", " + dutyTime;
                                     duty.child(officerId).child("Friday").setValue(dutyPostAndTime).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
@@ -534,7 +534,7 @@ public class AssignDutyActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     String dutyTime = spinnerSatDutyTime.getSelectedItem().toString();
                                     String dutyPost = spinnerSatDutyPost.getSelectedItem().toString();
-                                    final String dutyPostAndTime = dutyPost + " " + dutyTime;
+                                    final String dutyPostAndTime = dutyPost + ", " + dutyTime;
                                     duty.child(officerId).child("Saturday").setValue(dutyPostAndTime).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
@@ -603,7 +603,7 @@ public class AssignDutyActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     String dutyTime = spinnerSunDutyTime.getSelectedItem().toString();
                                     String dutyPost = spinnerSunDutyPost.getSelectedItem().toString();
-                                    final String dutyPostAndTime = dutyPost + " " + dutyTime;
+                                    final String dutyPostAndTime = dutyPost + ", " + dutyTime;
                                     duty.child(officerId).child("Sunday").setValue(dutyPostAndTime).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {

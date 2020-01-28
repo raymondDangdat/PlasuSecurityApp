@@ -153,6 +153,8 @@ public class OfficerHome extends AppCompatActivity
             finish();
         }else if (id == R.id.nav_reports){
             startActivity(new Intent(OfficerHome.this, OfficerReportsActivity.class));
+        }else if (id == R.id.nav_duty_rooster){
+            startActivity(new Intent(OfficerHome.this, DutyRooster.class));
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
