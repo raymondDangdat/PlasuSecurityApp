@@ -60,6 +60,7 @@ public class AssignDutyActivity extends AppCompatActivity {
             officerId = getIntent().getStringExtra("officerId");
 
             if (!officerId.isEmpty()){
+                Toast.makeText(this, "Rotate phone to landscape mode for better view", Toast.LENGTH_LONG).show();
 
                 //get the username
                 officers.child(officerId).addValueEventListener(new ValueEventListener() {

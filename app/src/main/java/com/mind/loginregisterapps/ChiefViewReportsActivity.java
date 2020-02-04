@@ -7,17 +7,20 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mind.loginregisterapps.Common.Common;
 import com.mind.loginregisterapps.Interface.ItemClickListener;
 import com.mind.loginregisterapps.Model.OfficerSendReportModel;
 import com.mind.loginregisterapps.Utils.ReportUtils;
@@ -54,7 +57,7 @@ public class ChiefViewReportsActivity extends AppCompatActivity {
 
     private void loadReports() {
         FirebaseRecyclerOptions<OfficerSendReportModel> options = new FirebaseRecyclerOptions.Builder<OfficerSendReportModel>()
-                .setQuery(reports, OfficerSendReportModel.class)
+                .setQuery(reports.orderByChild("date"), OfficerSendReportModel.class)
                 .build();
         adapter = new FirebaseRecyclerAdapter<OfficerSendReportModel, ViewHolder>(options) {
             @Override
@@ -87,6 +90,19 @@ public class ChiefViewReportsActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        if (item.getTitle().equals(Common.DELETE)){
+            deleteRooster(adapter.getRef(item.getOrder()).getKey());
+        }
+        return super.onContextItemSelected(item);
+    }
+
+    private void deleteRooster(String key) {
+        reports.child(key).removeValue();
+        Toast.makeText(this, "Duty rooster deleted", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home :
@@ -98,7 +114,7 @@ public class ChiefViewReportsActivity extends AppCompatActivity {
 
 
 
-    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnCreateContextMenuListener {
         TextView reporterName, reportDate;
         private ItemClickListener itemClickListener;
         public ViewHolder(@NonNull View itemView) {
@@ -109,6 +125,7 @@ public class ChiefViewReportsActivity extends AppCompatActivity {
 
 
             itemView.setOnClickListener(this);
+            itemView.setOnCreateContextMenuListener(this);
         }
 
 
@@ -120,6 +137,12 @@ public class ChiefViewReportsActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             itemClickListener.onClick(v, getAdapterPosition(), false);
+        }
+
+        @Override
+        public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+            menu.setHeaderTitle("Select an action");
+            menu.add(0,1, getAdapterPosition(), Common.DELETE);
         }
     }
 }

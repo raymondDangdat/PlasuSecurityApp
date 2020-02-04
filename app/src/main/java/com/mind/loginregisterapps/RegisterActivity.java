@@ -106,7 +106,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     public void onSuccess(Void aVoid) {
                                         registerDialog.dismiss();
                                         Toast.makeText(RegisterActivity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                                        startActivity(new Intent(RegisterActivity.this, ManageOfficersActivity.class));
                                     }
                                 }
                         ).addOnFailureListener(new OnFailureListener() {
